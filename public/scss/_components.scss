@@ -36,7 +36,6 @@
 }
 
 #gallery {
-    overflow-x: hidden;
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 1rem;
@@ -52,18 +51,16 @@
 #aboutme {
     background-color: $lightgrey;
 
-    .border-img {
+    img {
+        justify-self: center;
+        align-self: center;
+        width: 30vw;
         border: solid;
         border-color: $darkgrey;
         border-width: 2px;
+        display: block;
+        padding-right: 0;
         margin: auto;
-        width: 100%;
-
-        img {
-            width: 100%;
-            display: block;
-            padding-right: 0;
-        }
     }
 
     .aboutme-content{
