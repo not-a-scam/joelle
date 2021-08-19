@@ -1,0 +1,88 @@
+@use "./base" as *;
+
+#cover {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: $lightgrey;
+}
+
+.cover-img{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    padding: 10% 15%;
+    border: solid;
+    border-width: 2px;
+    border-color: $darkgrey;
+
+    .top-text, .bottom-text{
+        color: $darkgrey;
+        font-size: 2em;
+        font-weight: 400;
+        position: absolute;
+        text-transform: uppercase;
+    }
+
+    .top-text {
+        top: -2em;
+        left: 2rem;
+    }
+
+    .bottom-text {
+        bottom: -2em;
+        right: 2rem;
+    }
+}
+
+#gallery {
+    overflow-x: hidden;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 1350px;
+    margin: 7% auto;
+}
+
+.gallery-img{
+    cursor: pointer;
+}
+
+#aboutme {
+    background-color: $lightgrey;
+
+    .border-img {
+        border: solid;
+        border-color: $darkgrey;
+        border-width: 2px;
+        margin: auto;
+        width: 100%;
+
+        img {
+            width: 100%;
+            display: block;
+            padding-right: 0;
+        }
+    }
+
+    .aboutme-content{
+        margin-left: 10%;
+        justify-self: center;
+        align-self: center;
+
+        h2 {
+            color: $darkgrey;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+    }
+}

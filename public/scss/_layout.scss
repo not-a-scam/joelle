@@ -1,0 +1,36 @@
+@use "./base" as *;
+
+.y-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    span {
+        padding-bottom: 1rem;
+        padding-right: 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.x-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+
+    span {
+        padding-right: 1rem;
+        padding-bottom: 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.container {
+    padding: 7% 10%;
+}

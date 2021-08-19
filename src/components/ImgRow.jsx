@@ -2,9 +2,13 @@ import React from 'react';
 
 function ImgRow(props) {
     return (
-        <div class={props.isX ? "x-row" : "y-row"}>
+        <div className={props.isX ? "x-row" : "y-row"}>
             {props.imgs.map((img) => {
-                return <img src={img} alt="" />
+                if (!img.isFiller){
+                    return <span><img src={img.img} className="gallery-img" alt="" /></span>
+                } else {
+                    return <span><img src={img.img} alt="" /></span>
+                }
             })}
         </div>
     )

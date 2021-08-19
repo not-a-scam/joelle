@@ -3,11 +3,11 @@ import coverImg from "../images/cover.png";
 
 function Cover() {
     return (
-        <section id="cover">
-            <div class="cover-img">
-                <h1 class="top-text">Joelle Yeo</h1>
+        <section id="cover" className="container">
+            <div className="cover-img">
+                <h1 className="top-text">Joelle Yeo</h1>
                 <img src={coverImg} alt="cover" />
-                <h2 class="bottom-text">IB Showcase</h2>
+                <h2 className="bottom-text">IB Showcase</h2>
             </div>
         </section>
     );

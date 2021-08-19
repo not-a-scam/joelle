@@ -6,7 +6,7 @@ import extensionsImg from '../images/gallery/extensions.png';
 import extensionsFillerImg from '../images/gallery/extensions-filler.png';
 import primaryImg from '../images/gallery/primary.png';
 import primaryFillerImg from '../images/gallery/primary-filler.png';
-import chairImg from '../images/gallery/3001.png';
+import chairImg from '../images/gallery/gallery.png';
 import chairFillerImg from '../images/gallery/3001-filler.png';
 import homeImg from '../images/gallery/home.png';
 import homeFillerImg from '../images/gallery/home-filler.png';
@@ -20,24 +20,24 @@ const imgs = [
         "y",
         [
             "x",
-            {imgs: [layersImg, layersFillerImg], isX: false},
-            {imgs: [extensionsImg, extensionsFillerImg], isX: true},
-            {imgs: [primaryImg, primaryFillerImg], isX: false}
+            {imgs: [{img: layersImg, isFiller: false}, {img: layersFillerImg, isFiller: true} ], isX: false},
+            {imgs: [{img: extensionsImg, isFiller: false}, {img: extensionsFillerImg, isFiller: true}], isX: true},
+            {imgs: [{img: primaryImg, isFiller: false}, {img: primaryFillerImg, isFiller: true}], isX: false}
         ],
-        {imgs: [chairImg, chairFillerImg], isX: false}
+        {imgs: [{img: chairImg,isFiller: false}, {img: chairFillerImg, isFiller: true}], isX: false}
     ], 
     [
         "y",
-        {imgs: [homeImg, homeFillerImg], isX: true},
-        {imgs: [growingUpFillerImg, growingUpImg], isX: true},
-        {imgs: [memoriesImg], isX: false}
+        {imgs: [{img: homeImg, isFiller: false}, {img: homeFillerImg, isFiller: true}], isX: true},
+        {imgs: [{img: growingUpFillerImg, isFiller: true}, {img: growingUpImg, isFiller: false}], isX: true},
+        {imgs: [{img: memoriesImg, isFiller: true}], isX: false}
     ]
 ];
 
 function createGallery(obj) {
 
     if(Array.isArray(obj)){
-        const newObj = <div class={obj[0] === "x"? "x-row": "y-row"}>
+        const newObj = <div className={obj[0] === "x"? "x-row": "y-row"}>
             {obj.slice(1).map(subObj => {
                 return createGallery(subObj);
             })}
