@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/joelle/static/css/main.e1853830.chunk.css",
-    "main.js": "/joelle/static/js/main.89e43db1.chunk.js",
-    "main.js.map": "/joelle/static/js/main.89e43db1.chunk.js.map",
+    "main.css": "/joelle/static/css/main.f7572f31.chunk.css",
+    "main.js": "/joelle/static/js/main.3c4a325d.chunk.js",
+    "main.js.map": "/joelle/static/js/main.3c4a325d.chunk.js.map",
     "runtime-main.js": "/joelle/static/js/runtime-main.f9a9cfa2.js",
     "runtime-main.js.map": "/joelle/static/js/runtime-main.f9a9cfa2.js.map",
     "static/js/2.da58711b.chunk.js": "/joelle/static/js/2.da58711b.chunk.js",
     "static/js/2.da58711b.chunk.js.map": "/joelle/static/js/2.da58711b.chunk.js.map",
     "index.html": "/joelle/index.html",
-    "static/css/main.e1853830.chunk.css.map": "/joelle/static/css/main.e1853830.chunk.css.map",
+    "static/css/main.f7572f31.chunk.css.map": "/joelle/static/css/main.f7572f31.chunk.css.map",
     "static/js/2.da58711b.chunk.js.LICENSE.txt": "/joelle/static/js/2.da58711b.chunk.js.LICENSE.txt",
     "static/media/3001-filler.8aa8afca.png": "/joelle/static/media/3001-filler.8aa8afca.png",
     "static/media/3001.68592e4b.png": "/joelle/static/media/3001.68592e4b.png",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.f9a9cfa2.js",
     "static/js/2.da58711b.chunk.js",
-    "static/css/main.e1853830.chunk.css",
-    "static/js/main.89e43db1.chunk.js"
+    "static/css/main.f7572f31.chunk.css",
+    "static/js/main.3c4a325d.chunk.js"
   ]
 }
