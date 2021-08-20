@@ -5,7 +5,19 @@ $white: #ffffff;
 $black: #000000;
 
 // screens
+$tablet: 800px;
+$mobile: 550px;
 
+@mixin mobile {
+    @media only screen and (max-width: $mobile){
+        @content
+    }
+}
+@mixin tablet {
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        @content
+    }
+}
 
 //fonts
 h1, h2, h3{

@@ -1,0 +1,170 @@
+@use "./base" as *;
+
+#cover {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: $lightgrey;
+    padding: 7% 10%;
+}
+
+.cover-img{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    padding: 10% 15%;
+    border: solid;
+    border-width: 2px;
+    border-color: $darkgrey;
+
+    @include mobile {
+        border: none;
+        padding: 10% 0;
+    }
+
+    .top-text, .bottom-text{
+        color: $darkgrey;
+        font-size: 2em;
+        font-weight: 400;
+        position: absolute;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+
+        @include mobile {
+            font-size: 1.7rem;
+        }
+    }
+
+    .top-text {
+        top: -2em;
+        left: 2rem;
+
+        @include mobile {
+            width: fit-content;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .bottom-text {
+        bottom: -2em;
+        right: 2rem;
+
+        @include mobile {
+            width: fit-content;
+            margin: auto;
+            right: 0;
+            left: 0;
+        }
+    }
+}
+
+#gallery {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 1350px;
+    margin: 7% auto;
+
+    h2 {
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 30%;
+    }
+
+    @include mobile{
+        padding: 20% 12% 0;
+    }
+}
+
+.gallery-card{
+    img {
+        margin-bottom: 10%;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: $darkgrey;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 10%;
+    }
+
+    p {
+        line-height: 1.4;
+        font-size: 1rem;
+        color: $darkgrey;
+        margin-bottom: 30%;
+    }
+}
+
+.gallery-img{
+    cursor: pointer;
+}
+
+#aboutme {
+    background-color: $lightgrey;
+    padding: 15% 10%;
+
+    img {
+        justify-self: center;
+        align-self: center;
+        width: 30vw;
+        border: solid;
+        border-color: $darkgrey;
+        border-width: 2px;
+        display: block;
+        padding-right: 0;
+        margin: auto;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    h2 {
+        color: $darkgrey;
+        text-transform: uppercase;
+        text-align: center;
+        font-size:  2.2rem;
+        margin-bottom: 5%;
+    }
+
+    p {
+        color: $darkgrey;
+        line-height: 1.5;
+        margin-bottom: 1em;
+    }
+
+    .aboutme-content{
+        margin-left: 10%;
+        justify-self: center;
+        align-self: center;
+
+        h2 {
+            font-size: 2.5rem;
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            @include tablet {
+                font-size: .8rem;
+            }
+        }
+    }
+}
