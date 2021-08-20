@@ -128,6 +128,7 @@ function createDesktopGallery(galleryMode, settings){
 function Gallery() {
     const [isMobile, setMQL] = useState(window.innerWidth < 550 ? true: false);
     const [galleryMode, setGalleryMode] = useState({mode: 'full', work: null});
+    const [isVisible, setVisibility] = useState(true);
 
     window.addEventListener('resize', () => {
         const mql = window.matchMedia('(max-width: 550px)');
@@ -135,15 +136,25 @@ function Gallery() {
     })
 
     function handleImgClick(imgName) {
-        setGalleryMode({mode: 'focus', work:imgName});
+        console.log('click');
+        setVisibility(false);
+        setTimeout(()=>{
+            setGalleryMode({mode: 'focus', work:imgName});
+            setVisibility(true);
+        }, 1000);
     }
 
     function handleBackClick() {
-        setGalleryMode({mode: 'full', work: null});
+        console.log('click');
+        setVisibility(false);
+        setTimeout(()=>{
+            setGalleryMode({mode: 'full', work: null});
+            setVisibility(true);
+        }, 1000);
     }
 
     return (
-        <section id="gallery">
+        <section id="gallery" className={isVisible? null : "disappear"}>
             {
                 isMobile
                     ?<div>

@@ -74,6 +74,8 @@
     width: 100%;
     max-width: 1350px;
     margin: 7% auto;
+    opacity: 1;
+    transition: opacity 1s ease;
 
     h2 {
         text-transform: uppercase;
@@ -92,6 +94,10 @@
             margin-bottom: 30%;
         }
     }
+}
+
+#gallery.disappear {
+    opacity: 0;
 }
 
 .gallery-card{
