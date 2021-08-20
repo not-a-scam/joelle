@@ -77,14 +77,20 @@
 
     h2 {
         text-transform: uppercase;
-        color: $black;
+        color: $darkgrey;
         text-align: center;
         font-size: 3rem;
-        margin-bottom: 30%;
+        margin-bottom: 2rem;
     }
 
     @include mobile{
         padding: 20% 12% 0;
+
+        h2 {
+            color: $black;
+            font-size: 3rem;
+            margin-bottom: 30%;
+        }
     }
 }
 
@@ -97,7 +103,7 @@
         text-transform: uppercase;
         color: $darkgrey;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         margin-bottom: 10%;
     }
 
@@ -111,7 +117,73 @@
 
 .gallery-img{
     cursor: pointer;
+    transition: transform 1s ease;
 }
+
+.gallery-img:hover {
+    transform: scale(1.02);
+}
+
+.x-row {
+    .row-content {
+        margin: auto auto auto 10%;
+    
+        p {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin-bottom: 5%;
+        }
+    
+        button {
+            display: block;
+            color: $blue;
+            font-size: 1.3rem;
+            border: none;
+            background-color: transparent;
+            text-transform: uppercase;
+            margin: auto 0 auto auto;
+        }
+    }
+
+    .focus-img{
+        width: 40%;
+        height: auto;
+    }
+    
+    .focus {
+        padding: 3%;
+    }
+}
+
+.y-row {
+    .row-content{
+        margin: 0 10%;
+        p {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin-bottom: 5%;
+        }
+    
+        button {
+            display: block;
+            color: $blue;
+            font-size: 1.3rem;
+            border: none;
+            background-color: transparent;
+            text-transform: uppercase;
+            margin: auto 0 auto auto;
+        }
+    }
+
+    .focus-img{
+        margin-bottom: 5%;
+    }
+    
+    .focus {
+        padding: 3%;
+    }
+}
+
 
 #aboutme {
     background-color: $lightgrey;

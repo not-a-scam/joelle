@@ -7,7 +7,7 @@ function ImgRow(props) {
                 return <span key={img.id}>
                     {img.isFiller 
                         ?<img src={img.img} alt="" />
-                        :<img src={img.img} className="gallery-img" alt=""/>
+                        :<img src={img.img} className="gallery-img" alt="" onClick={() => {props.onClick(img.id)}}/>
                     }
                 </span>
             })}

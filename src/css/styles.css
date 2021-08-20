@@ -91,14 +91,19 @@ p {
 }
 #gallery h2 {
   text-transform: uppercase;
-  color: #000000;
+  color: #4d4c4a;
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 30%;
+  margin-bottom: 2rem;
 }
 @media only screen and (max-width: 550px) {
   #gallery {
     padding: 20% 12% 0;
+  }
+  #gallery h2 {
+    color: #000000;
+    font-size: 3rem;
+    margin-bottom: 30%;
   }
 }
 
@@ -109,7 +114,7 @@ p {
   text-transform: uppercase;
   color: #4d4c4a;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-bottom: 10%;
 }
 .gallery-card p {
@@ -121,6 +126,60 @@ p {
 
 .gallery-img {
   cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+}
+
+.x-row .row-content {
+  margin: auto auto auto 10%;
+}
+.x-row .row-content p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+.x-row .row-content button {
+  display: block;
+  color: #85acd1;
+  font-size: 1.3rem;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: auto 0 auto auto;
+}
+.x-row .focus-img {
+  width: 40%;
+  height: auto;
+}
+.x-row .focus {
+  padding: 3%;
+}
+
+.y-row .row-content {
+  margin: 0 10%;
+}
+.y-row .row-content p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+.y-row .row-content button {
+  display: block;
+  color: #85acd1;
+  font-size: 1.3rem;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: auto 0 auto auto;
+}
+.y-row .focus-img {
+  margin-bottom: 5%;
+}
+.y-row .focus {
+  padding: 3%;
 }
 
 #aboutme {
