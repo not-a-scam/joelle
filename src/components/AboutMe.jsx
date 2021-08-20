@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import aboutMeImg from '../images/aboutme.png';
 
 function AboutMe() {
-    const [isMobile, setMQL] = useState( window.innerWidth > 550 ? true: false);
+    const [isMobile, setMQL] = useState( window.innerWidth < 550 ? true: false);
     
-    window.onresize = () => {
+    window.addEventListener('resize', () => {
         const mql = window.matchMedia('(max-width: 550px)');
         setMQL(mql.matches);
-    }
+    });
 
     return (
         <section id="aboutme">
