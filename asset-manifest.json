@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/joelle/static/css/main.f7572f31.chunk.css",
-    "main.js": "/joelle/static/js/main.3c4a325d.chunk.js",
-    "main.js.map": "/joelle/static/js/main.3c4a325d.chunk.js.map",
+    "main.js": "/joelle/static/js/main.bf4e96d9.chunk.js",
+    "main.js.map": "/joelle/static/js/main.bf4e96d9.chunk.js.map",
     "runtime-main.js": "/joelle/static/js/runtime-main.f9a9cfa2.js",
     "runtime-main.js.map": "/joelle/static/js/runtime-main.f9a9cfa2.js.map",
     "static/js/2.da58711b.chunk.js": "/joelle/static/js/2.da58711b.chunk.js",
@@ -39,6 +39,6 @@
     "static/js/runtime-main.f9a9cfa2.js",
     "static/js/2.da58711b.chunk.js",
     "static/css/main.f7572f31.chunk.css",
-    "static/js/main.3c4a325d.chunk.js"
+    "static/js/main.bf4e96d9.chunk.js"
   ]
 }
